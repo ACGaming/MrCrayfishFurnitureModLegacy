@@ -1,16 +1,20 @@
 package com.mrcrayfish.furniture.blocks;
 
-import com.mrcrayfish.furniture.gui.inventory.ISimpleInventory;
-import com.mrcrayfish.furniture.util.InventoryUtil;
+import java.util.stream.IntStream;
+
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import com.mrcrayfish.furniture.gui.inventory.ISimpleInventory;
+import com.mrcrayfish.furniture.util.InventoryUtil;
 
 public abstract class BlockFurnitureTile extends BlockFurniture implements ITileEntityProvider
 {
@@ -41,11 +45,15 @@ public abstract class BlockFurnitureTile extends BlockFurniture implements ITile
         {
             IInventory inv = (IInventory) tileEntity;
             InventoryHelper.dropInventoryItems(world, pos, inv);
+            IntStream.range(0, inv.getSizeInventory())
+                .filter(i -> !inv.getStackInSlot(i).isEmpty())
+                .forEach(i -> inv.setInventorySlotContents(i, ItemStack.EMPTY));
         }
         if(tileEntity instanceof ISimpleInventory)
         {
             ISimpleInventory inv = (ISimpleInventory) tileEntity;
             InventoryUtil.dropInventoryItems(world, pos, inv);
+            inv.clear();
         }
         super.breakBlock(world, pos, state);
     }
