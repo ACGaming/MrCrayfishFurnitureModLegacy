@@ -33,10 +33,14 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Fixed pick block functionality for coolers
 * Fixed placement of Grand Chair + Christmas Tree
 * Fixed recipes for coolers
+* Fixed rotatable furniture losing internal attributes/items
 * Fixed sliding door redstone handling
 * Fixed soapy water bucket duplication
 * Fixed spruce mailbox recipe name typo
 * Fixed steam particle typo
+* Fixed washing machines repairing non-repairable items
+* Improved image cache stability
+* Prevented duplications in certain containers
 * Reduced arbitrary container limitations
 * Removed arbitrary jump height limits
 * Restructured configuration handler
