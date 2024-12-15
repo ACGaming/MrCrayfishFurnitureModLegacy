@@ -110,7 +110,6 @@ public class TileEntityWashingMachine extends TileEntityFurniture implements ISi
         return false;
     }
 
-    private Random rand = new Random();
     private int timer = 0;
 
     @Override
@@ -136,12 +135,10 @@ public class TileEntityWashingMachine extends TileEntityFurniture implements ISi
             {
                 for(int i = 0; i < 4; i++)
                 {
-                    if(!getStackInSlot(i).isEmpty())
+                    ItemStack stack = getStackInSlot(i);
+                    if(stack.isItemDamaged() && stack.getItem().isRepairable())
                     {
-                        if(getStackInSlot(i).getMaxDamage() - getStackInSlot(i).getItemDamage() != getStackInSlot(i).getMaxDamage())
-                        {
-                            getStackInSlot(i).setItemDamage(getStackInSlot(i).getItemDamage() - 1);
-                        }
+                        stack.setItemDamage(stack.getItemDamage() - 1);
                     }
                 }
                 PacketHandler.INSTANCE.sendToAllAround(new MessageUpdateFields(this, pos), new TargetPoint(world.provider.getDimension(), pos.getX(), pos.getY(), pos.getZ(), 32));
