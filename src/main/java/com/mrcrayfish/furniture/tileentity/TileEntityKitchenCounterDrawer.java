@@ -2,6 +2,8 @@ package com.mrcrayfish.furniture.tileentity;
 
 import com.mrcrayfish.furniture.init.FurnitureSounds;
 import com.mrcrayfish.furniture.util.TileEntityUtil;
+
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -14,6 +16,8 @@ import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntityLockableLoot;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.common.util.Constants;
 
 /**
@@ -153,6 +157,12 @@ public class TileEntityKitchenCounterDrawer extends TileEntityLockableLoot
         NBTTagCompound tagCompound = super.writeToNBT(new NBTTagCompound());
         tagCompound.setInteger("colour", colour);
         return tagCompound;
+    }
+
+    @Override
+    public boolean shouldRefresh(World world, BlockPos pos, IBlockState oldState, IBlockState newState)
+    {
+        return oldState.getBlock() != newState.getBlock();
     }
 
     public void sync()

@@ -1,9 +1,13 @@
 package com.mrcrayfish.furniture.tileentity;
 
 import com.mrcrayfish.furniture.gui.inventory.ISimpleInventory;
+
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 public class TileEntityCookieJar extends TileEntity implements ISimpleInventory
 {
@@ -22,5 +26,11 @@ public class TileEntityCookieJar extends TileEntity implements ISimpleInventory
     @Override
     public void clear()
     {
+    }
+
+    @Override
+    public boolean shouldRefresh(World world, BlockPos pos, IBlockState oldState, IBlockState newState)
+    {
+        return oldState.getBlock() != newState.getBlock();
     }
 }
