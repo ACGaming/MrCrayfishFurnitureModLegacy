@@ -11,8 +11,10 @@ import org.apache.commons.io.FileUtils;
 import javax.annotation.Nullable;
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.Map;
+
+import com.mrcrayfish.furniture.MrCrayfishFurnitureMod;
 
 /**
  * Author: MrCrayfish
@@ -23,7 +25,7 @@ public final class ImageCache
     public static final ImageCache INSTANCE = new ImageCache();
 
     private final File cache;
-    private Map<String, Texture> cacheMap = new HashMap<>();
+    private Map<String, Texture> cacheMap = new ConcurrentHashMap<>();
 
     private ImageCache()
     {
@@ -48,21 +50,26 @@ public final class ImageCache
     public Texture get(String url)
     {
         if(url == null)
+        {
             return null;
-
+        }
+        Texture texture = cacheMap.get(url);
+        if(texture != null)
+        {
+            return texture;
+        }
         synchronized(this)
         {
-            Texture texture = cacheMap.get(url);
-            if(texture != null)
-            {
-                return texture;
-            }
+            return cacheMap.get(url);
         }
-        return null;
     }
 
     public void add(String url, File file)
     {
+        if(cacheMap.containsKey(url))
+        {
+            return;
+        }
         synchronized(this)
         {
             if(!cacheMap.containsKey(url))
@@ -75,35 +82,39 @@ public final class ImageCache
 
     public boolean add(String url, byte[] data)
     {
+        if(cacheMap.containsKey(url))
+        {
+            return true;
+        }
+
+        Texture texture;
+        String id = DigestUtils.sha1Hex(url.getBytes());
+        File image = new File(getCache(), id);
+
         synchronized(this)
         {
-            try
+            if(cacheMap.containsKey(url))
             {
-                if(!cacheMap.containsKey(url))
-                {
-                    String id = DigestUtils.sha1Hex(url.getBytes());
-                    File image = new File(getCache(), id);
-                    FileUtils.writeByteArrayToFile(image, data);
-                    Texture texture = new Texture(image);
-                    cacheMap.put(url, texture);
-                    Minecraft.getMinecraft().addScheduledTask(texture::update);
-                }
                 return true;
             }
-            catch(IOException e)
-            {
-                e.printStackTrace();
-            }
-            return false;
+            cacheMap.put(url, texture = new Texture(image));
         }
+
+        try
+        {
+            FileUtils.writeByteArrayToFile(image, data);
+        }
+        catch(IOException e)
+        {
+            MrCrayfishFurnitureMod.logger().warn(e);
+        }
+        Minecraft.getMinecraft().addScheduledTask(texture::update);
+        return true;
     }
 
     private void tick()
     {
-        synchronized(this)
-        {
-            cacheMap.values().forEach(Texture::update);
-        }
+        cacheMap.values().forEach(Texture::update);
     }
 
     @SubscribeEvent
@@ -117,12 +128,9 @@ public final class ImageCache
 
     public boolean loadCached(String url)
     {
-        synchronized(this)
+        if(cacheMap.containsKey(url))
         {
-            if(cacheMap.containsKey(url))
-            {
-                return true;
-            }
+            return true;
         }
 
         String id = DigestUtils.sha1Hex(url.getBytes());
@@ -137,6 +145,10 @@ public final class ImageCache
 
     public boolean isCached(String url)
     {
+        if(cacheMap.containsKey(url))
+        {
+            return true;
+        }
         synchronized(this)
         {
             return cacheMap.containsKey(url);
