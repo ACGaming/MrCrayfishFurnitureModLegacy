@@ -39,7 +39,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Fixed spruce mailbox recipe name typo
 * Fixed steam particle typo
 * Fixed washing machines repairing non-repairable items
-* Improved image cache stability
+* Improved image/GIF cache stability
 * Prevented duplications in certain containers
 * Reduced arbitrary container limitations
 * Removed arbitrary jump height limits
