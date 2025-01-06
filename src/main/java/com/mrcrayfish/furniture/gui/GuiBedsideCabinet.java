@@ -41,7 +41,10 @@ public class GuiBedsideCabinet extends GuiContainer
     {
         int color = 14540253;
         if (this.type == 2) color = 4210752;
-        this.fontRenderer.drawString(I18n.format("container.bedside_cabinet"), (this.xSize / 2) - 28, 6, color);
+        GlStateManager.pushMatrix();
+        GlStateManager.scale(0.8F, 0.8F, 1.0F);
+        this.fontRenderer.drawString(I18n.format("container.bedside_cabinet"), (this.xSize / 2) - 17, 7, color);
+        GlStateManager.popMatrix();
         this.fontRenderer.drawString(I18n.format("container.inventory"), 8, this.ySize - 94, color);
     }
 
