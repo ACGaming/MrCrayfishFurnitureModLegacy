@@ -16,6 +16,7 @@ This mod is an **unofficial** continuation and is not affiliated with MrCrayfish
 * Added seasonal presents config setting
 * Added toaster easter egg
 * Added trusted URL domains list type config
+* Adjusted bedside cabinet GUI title
 * Adjusted block hardness values
 * Disabled creative categories until rework
 * Enabled infinite mirror reflections
