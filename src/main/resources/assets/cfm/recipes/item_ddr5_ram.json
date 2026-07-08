@@ -1,0 +1,25 @@
+{
+    "result": {
+        "item": "cfm:item_ddr5_ram"
+    },
+    "pattern": [
+        "BBB",
+        "RCR",
+        "GGG"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "B": {
+            "item": "cfm:item_circuit_board"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "C": {
+            "item": "minecraft:end_crystal"
+        },
+        "G": {
+            "item": "cfm:item_golden_wire"
+        }
+    }
+}
