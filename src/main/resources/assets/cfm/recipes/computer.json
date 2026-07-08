@@ -4,8 +4,8 @@
   },
   "pattern": [
     "515",
-    "424",
-    "-3_"
+    "326",
+    "-4_"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -16,10 +16,10 @@
       "item": "minecraft:redstone"
     },
     "4": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:iron_block"
     },
     "3": {
-      "item": "minecraft:iron_block"
+      "item": "cfm:item_hard_drive"
     },
     "-": {
       "item": "cfm:item_controller_unit"
@@ -29,6 +29,9 @@
 	},
     "5": {
       "item": "cfm:item_natural_plastic_frame"
+	},
+    "6": {
+      "item": "minecraft:gold_ingot"
     }
   }
 }
