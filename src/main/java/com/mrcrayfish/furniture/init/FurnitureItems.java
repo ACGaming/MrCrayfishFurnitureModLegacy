@@ -148,7 +148,7 @@ public class FurnitureItems
         SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
         BATTERY = new ItemGeneric().setTranslationKey("item_battery").setRegistryName("item_battery");
         HARD_DRIVE = new ItemGeneric().setTranslationKey("item_hard_drive").setRegistryName("item_hard_drive");
-        HARD_DRIVE_PLATTER = new ItemGeneric().setTranslationKey("item_hard_platter").setRegistryName("item_hard_platter");
+        HARD_DRIVE_PLATTER = new ItemGeneric().setTranslationKey("item_hard_drive_platter").setRegistryName("item_hard_drive_platter");
     }
 
     public static void register()
