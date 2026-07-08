@@ -3,20 +3,32 @@
         "item": "cfm:item_hard_drive"
     },
     "pattern": [
-        "IRI",
-        "IBI",
-        "III"
+        "161",
+        "535",
+        "472"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
-        "I": {
+        "1": {
             "item": "minecraft:iron_ingot"
         },
-        "R": {
+        "2": {
             "item": "minecraft:redstone"
         },
-        "B": {
-            "item": "minecraft:silver_shulker_box"
+        "3": {
+            "item": "cfm:item_hard_drive_platter"
+		},
+        "4": {
+            "item": "minecraft:comparator"
+		},
+        "5": {
+            "item": "cfm:item_golden_wire"
+		},
+        "6": {
+            "item": "cfm:item_controller_unit"
+		},
+        "7": {
+            "item": "cfm:item_small_electric_motor"
         }
     }
 }
