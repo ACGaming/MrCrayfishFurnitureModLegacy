@@ -76,6 +76,7 @@ public class FurnitureItems
     public static final Item CIRCUIT_BOARD;
     public static final Item CONTROLLER_UNIT;
     public static final Item DDR5_RAM;
+    public static final Item GPU_LAPTOP;
     public static final Item WIFI_CARD;
     public static final Item GOLDEN_WIRE;
     public static final Item PRINTER_CARRIAGE;
@@ -142,6 +143,7 @@ public class FurnitureItems
         CIRCUIT_BOARD = new ItemGeneric().setTranslationKey("item_circuit_board").setRegistryName("item_circuit_board");
         CONTROLLER_UNIT = new ItemGeneric().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
         DDR5_RAM = new ItemGeneric().setTranslationKey("item_ddr5_ram").setRegistryName("item_ddr5_ram");
+        GPU_LAPTOP = new ItemGeneric().setTranslationKey("item_gpu_laptop").setRegistryName("item_gpu_laptop");
         WIFI_CARD = new ItemGeneric().setTranslationKey("item_wifi_card").setRegistryName("item_wifi_card");
         GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
         PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
@@ -203,6 +205,7 @@ public class FurnitureItems
         registerItem(CIRCUIT_BOARD);
         registerItem(CONTROLLER_UNIT);
         registerItem(DDR5_RAM);
+        registerItem(GPU_LAPTOP);
         registerItem(WIFI_CARD);
         registerItem(GOLDEN_WIRE);
         registerItem(PRINTER_CARRIAGE);

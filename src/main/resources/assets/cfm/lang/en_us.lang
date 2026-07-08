@@ -58,6 +58,7 @@ item.item_screen.name=Screen
 item.item_circuit_board.name=Circuit Board
 item.item_controller_unit.name=Controller Unit
 item.item_ddr5_ram.name=DDR5 RAM Module
+item.item_gpu_laptop.name=GPU Laptop
 item.item_wifi_card.name=Wifi Card
 item.item_golden_wire.name=Golden Wire
 item.item_printer_carriage.name=Printer Carriage
