@@ -80,6 +80,7 @@ public class FurnitureItems
     public static final Item PRINTER_CARRIAGE;
     public static final Item SMALL_ELECTRIC_MOTOR;
     public static final Item BATTERY;
+    public static final Item HARD_DRIVE;
 
     /**
      * Nostalgia Update
@@ -143,6 +144,7 @@ public class FurnitureItems
         PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
         SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
         BATTERY = new ItemGeneric().setTranslationKey("item_battery").setRegistryName("item_battery");
+        HARD_DRIVE = new ItemGeneric().setTranslationKey("item_hard_drive").setRegistryName("item_hard_drive");
     }
 
     public static void register()
@@ -201,6 +203,7 @@ public class FurnitureItems
         registerItem(PRINTER_CARRIAGE);
         registerItem(SMALL_ELECTRIC_MOTOR);
         registerItem(BATTERY);
+        registerItem(HARD_DRIVE);
     }
 
     private static void registerItem(Item item)
