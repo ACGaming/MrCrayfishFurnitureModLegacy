@@ -1,8 +1,8 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
     "textures": {
-        "0": "cdm:items/item_cpu",
-        "1": "cdm:items/item_cpu_back"
+        "0": "cdm:items/item_desktop_cpu",
+        "1": "cdm:items/item_desktop_cpu_back"
     },
     "display": {
         "gui": {
