@@ -16,7 +16,7 @@
       "item": "minecraft:redstone_block"
     },
     "*": {
-      "item": "minecraft:repeater"
+      "item": "cfm:item_ddr5_ram"
     },
     "-": {
       "item": "minecraft:comparator"
