@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "cdm:item_laptop_gpu"
+        "item": "cfm:item_laptop_gpu"
     },
     "pattern": [
         "OGO",

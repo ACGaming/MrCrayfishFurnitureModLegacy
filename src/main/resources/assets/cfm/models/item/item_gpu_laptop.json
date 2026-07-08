@@ -1,8 +1,8 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
     "textures": {
-        "0": "cdm:items/item_laptop_gpu_top",
-        "1": "cdm:items/item_laptop_gpu_bottom"
+        "0": "cfm:items/item_gpu_laptop_top",
+        "1": "cfm:items/item_gpu_laptop_bottom"
     },
     "display": {
         "gui": {

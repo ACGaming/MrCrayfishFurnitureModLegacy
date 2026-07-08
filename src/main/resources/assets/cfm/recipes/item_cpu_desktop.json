@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "cfm:item_desktop_cpu"
+        "item": "cfm:item_cpu_desktop"
     },
     "pattern": [
         "ICI",
