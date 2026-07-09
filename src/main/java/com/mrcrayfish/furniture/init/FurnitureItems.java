@@ -86,6 +86,7 @@ public class FurnitureItems
     public static final Item BATTERY;
     public static final Item HARD_DRIVE;
     public static final Item HARD_DRIVE_PLATTER;
+    public static final Item SOLID_STATE_DRIVE;
 
     /**
      * Nostalgia Update
@@ -155,6 +156,7 @@ public class FurnitureItems
         BATTERY = new ItemGeneric().setTranslationKey("item_battery").setRegistryName("item_battery");
         HARD_DRIVE = new ItemGeneric().setTranslationKey("item_hard_drive").setRegistryName("item_hard_drive");
         HARD_DRIVE_PLATTER = new ItemGeneric().setTranslationKey("item_hard_drive_platter").setRegistryName("item_hard_drive_platter");
+        SOLID_STATE_DRIVE = new ItemGeneric().setTranslationKey("item_solid_state_drive").setRegistryName("item_solid_state_drive");
     }
 
     public static void register()
@@ -219,6 +221,7 @@ public class FurnitureItems
         registerItem(BATTERY);
         registerItem(HARD_DRIVE);
         registerItem(HARD_DRIVE_PLATTER);
+        registerItem(SOLID_STATE_DRIVE);
     }
 
     private static void registerItem(Item item)

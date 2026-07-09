@@ -68,6 +68,7 @@ item.item_small_electric_motor.name=Small Electric Motor
 item.item_battery.name=Redstone Battery
 item.item_hard_drive.name=Hard Drive
 item.item_hard_drive_platter.name=Hard Drive Platter
+item.item_solid_state_drive.name=Solid State Drive
 
 tile.table_oak.name=Oak Table
 tile.table_spruce.name=Spruce Table
