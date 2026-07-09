@@ -1,6 +1,6 @@
 {
     "result": {
-        "item": "cfm:item_laptop_gpu"
+        "item": "cfm:item_gpu_laptop"
     },
     "pattern": [
         "OGO",
@@ -13,7 +13,7 @@
             "item": "minecraft:obsidian"
         },
         "G": {
-            "item": "minecraft:gold_ingot"
+            "item": "cfm:item_golden_wire"
         },
         "R": {
             "item": "minecraft:redstone"

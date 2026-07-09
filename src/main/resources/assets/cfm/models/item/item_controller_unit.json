@@ -107,7 +107,7 @@
 		"gui": {
 			"rotation": [30, 45, 0],
 			"translation": [0, 3, 0],
-			"scale": [0.7, 0.7, 0.7]
+			"scale": [0.8, 0.8, 0.8]
 		},
 		"head": {
 			"translation": [0, 14.5, 0]

@@ -31,7 +31,7 @@
       "item": "cfm:item_hard_drive"
 	},
     "7": {
-      "item": "cfm:item_desktop_cpu"
+      "item": "cfm:item_cpu_desktop"
     }
   }
 }

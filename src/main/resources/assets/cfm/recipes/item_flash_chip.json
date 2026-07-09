@@ -1,0 +1,25 @@
+{
+    "result": {
+        "item": "cfm:item_flash_chip"
+    },
+    "pattern": [
+        "IRI",
+        "PPP",
+        "GGG"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "item": "cfm:item_natural_plastic_frame"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "G": {
+            "item": "cfm:item_golden_wire"
+        }
+    }
+}
