@@ -1,0 +1,19 @@
+{
+  "result": {
+    "item": "cfm:modern_mail_box_dark"
+  },
+  "pattern": [
+    "1*1",
+    "***",
+    "1*1"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "cfm:item_natural_plastic"
+    },
+    "*": {
+      "item": "minecraft:iron_ingot"
+    }
+  }
+}

@@ -13,6 +13,7 @@ public class FurnitureTileEntities
         GameRegistry.registerTileEntity(TileEntityFreezer.class, "cfmFreezer");
         GameRegistry.registerTileEntity(TileEntityBedsideCabinet.class, "cfmBedsideCabinet");
         GameRegistry.registerTileEntity(TileEntityMailBox.class, "cfmMailBox");
+        GameRegistry.registerTileEntity(TileEntityModernMailBox.class, "cfmModernMailBox");
         GameRegistry.registerTileEntity(TileEntityComputer.class, "cfmComputer");
         GameRegistry.registerTileEntity(TileEntityPrinter.class, "cfmPrinter");
         GameRegistry.registerTileEntity(TileEntityStereo.class, "cfmStereo");

@@ -99,6 +99,10 @@ public class GuiHandler implements IGuiHandler
         {
             return new GuiMailBox(player.inventory, (TileEntityMailBox) tileEntity);
         }
+        if(tileEntity instanceof TileEntityModernMailBox && id == 1)
+        {
+            return new GuiModernMailBox(player.inventory, (TileEntityModernMailBox) tileEntity);
+        }
         if(tileEntity instanceof TileEntityComputer)
         {
             return new GuiComputer(player.inventory, (TileEntityComputer) tileEntity);

@@ -59,7 +59,7 @@ public class ItemPackage extends Item implements IItemInventory, IAuthored
         {
             playerIn.openGui(MrCrayfishFurnitureMod.instance, 7, worldIn, 0, 0, 0);
         }
-        worldIn.playSound(null, playerIn.getPosition(), FurnitureSounds.carton, SoundCategory.PLAYERS, 0.75F, 1.0F);
+        worldIn.playSound(null, playerIn.getPosition(), FurnitureSounds.carton, SoundCategory.PLAYERS, 1.5F, 0.5F + worldIn.rand.nextFloat());
         return new ActionResult<>(EnumActionResult.SUCCESS, stack);
     }
 }

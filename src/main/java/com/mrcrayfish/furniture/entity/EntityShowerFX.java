@@ -46,9 +46,8 @@ public class EntityShowerFX extends Particle
 
         if(this.onGround)
         {
-            this.particleScale -= 0.1F;
-            this.motionX *= 0.699999988079071D;
-            this.motionY *= 0.699999988079071D;
+            this.particleScale = Math.max(0.0F, this.particleScale - 0.1F);
         }
+
     }
 }

@@ -1,0 +1,34 @@
+{
+    "result": {
+        "item": "cfm:item_hard_drive"
+    },
+    "pattern": [
+        "161",
+        "535",
+        "472"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "1": {
+            "item": "minecraft:iron_ingot"
+        },
+        "2": {
+            "item": "minecraft:redstone"
+        },
+        "3": {
+            "item": "cfm:item_hard_drive_platter"
+		},
+        "4": {
+            "item": "minecraft:comparator"
+		},
+        "5": {
+            "item": "cfm:item_golden_wire"
+		},
+        "6": {
+            "item": "cfm:item_controller_unit"
+		},
+        "7": {
+            "item": "cfm:item_small_electric_motor"
+        }
+    }
+}

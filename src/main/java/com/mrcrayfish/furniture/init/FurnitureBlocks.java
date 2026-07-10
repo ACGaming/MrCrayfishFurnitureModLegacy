@@ -120,6 +120,9 @@ public class FurnitureBlocks
     public static final Block RADIATOR;
     public static final Block FIGURINE_MRCRAYFISH;
     public static final Block CUSHION;
+    public static final Block SOLAR_PANEL;
+    public static final Block MODERN_MAIL_BOX_LIGHT;
+    public static final Block MODERN_MAIL_BOX_DARK;
 
     /* Nostalgia Update */
     public static final Block WOODEN_CHAIR_OLD;
@@ -248,9 +251,9 @@ public class FurnitureBlocks
         BEDSIDE_CABINET_JUNGLE = new BlockBedsideCabinet(Material.WOOD, "bedside_cabinet_jungle");
         BEDSIDE_CABINET_ACACIA = new BlockBedsideCabinet(Material.WOOD, "bedside_cabinet_acacia");
         BEDSIDE_CABINET_DARK_OAK = new BlockBedsideCabinet(Material.WOOD, "bedside_cabinet_dark_oak");
-        OVEN = new BlockOven(Material.ROCK, "oven");
-        RANGE_HOOD = new BlockRangeHood(Material.ROCK, false, "range_hood");
-        RANGE_HOOD_POWERED = new BlockRangeHood(Material.ROCK, true, "range_hood_powered");
+        OVEN = new BlockOven(Material.IRON, "oven");
+        RANGE_HOOD = new BlockRangeHood(Material.IRON, false, "range_hood");
+        RANGE_HOOD_POWERED = new BlockRangeHood(Material.IRON, true, "range_hood_powered");
         HEDGE_OAK = new BlockHedge("hedge_oak");
         HEDGE_SPRUCE = new BlockHedge("hedge_spruce");
         HEDGE_BIRCH = new BlockHedge("hedge_birch");
@@ -260,14 +263,16 @@ public class FurnitureBlocks
         BIRD_BATH = new BlockBirdBath(Material.ROCK, "bird_bath");
         STONE_PATH = new BlockStonePath(Material.ROCK, "stone_path");
         WHITE_FENCE = new BlockWhiteFence(Material.WOOD, "white_fence");
-        TAP = new BlockTap(Material.ROCK, "tap");
+        TAP = new BlockTap(Material.IRON, "tap");
         MAIL_BOX_OAK = new BlockMailBox(Material.WOOD, "mail_box");
         MAIL_BOX_SPRUCE = new BlockMailBox(Material.WOOD, "mail_box_spruce");
         MAIL_BOX_BIRCH = new BlockMailBox(Material.WOOD, "mail_box_birch");
         MAIL_BOX_JUNGLE = new BlockMailBox(Material.WOOD, "mail_box_jungle");
         MAIL_BOX_ACACIA = new BlockMailBox(Material.WOOD, "mail_box_acacia");
         MAIL_BOX_DARK_OAK = new BlockMailBox(Material.WOOD, "mail_box_dark_oak");
-        TV = new BlockTV(Material.WOOD, "tv");
+        MODERN_MAIL_BOX_LIGHT = new BlockModernMailBox(Material.IRON, "modern_mail_box_light");
+        MODERN_MAIL_BOX_DARK = new BlockModernMailBox(Material.IRON, "modern_mail_box_dark");
+        TV = new BlockTV(Material.IRON, "tv");
         RETRO_TV = new BlockRetroTV(Material.WOOD, "retro_tv");
         COMPUTER = new BlockComputer(Material.IRON, "computer");
         MODERN_COMPUTER = new BlockModernComputer(Material.IRON, "modern_computer");
@@ -279,11 +284,11 @@ public class FurnitureBlocks
         DOOR_BELL_JUNGLE = new BlockDoorBell(Material.WOOD, "door_bell_jungle");
         DOOR_BELL_ACACIA = new BlockDoorBell(Material.WOOD, "door_bell_acacia");
         DOOR_BELL_DARK_OAK = new BlockDoorBell(Material.WOOD, "door_bell_dark_oak");
-        FIRE_ALARM_ON = new BlockFireAlarm(Material.ROCK, true, "fire_alarm_on");
-        FIRE_ALARM_OFF = new BlockFireAlarm(Material.ROCK, false, "fire_alarm_off");
+        FIRE_ALARM_ON = new BlockFireAlarm(Material.IRON, true, "fire_alarm_on");
+        FIRE_ALARM_OFF = new BlockFireAlarm(Material.IRON, false, "fire_alarm_off");
         CEILING_LIGHT_ON = new BlockCeilingLight(Material.GLASS, true, "ceiling_light_on");
         CEILING_LIGHT_OFF = new BlockCeilingLight(Material.GLASS, false, "ceiling_light_off");
-        STEREO = new BlockStereo(Material.WOOD, "stereo");
+        STEREO = new BlockStereo(Material.IRON, "stereo");
         TOILET = new BlockToilet(Material.ROCK, "toilet");
         BASIN = new BlockBasin(Material.ROCK, "basin");
         WALL_CABINET = new BlockWallCabinet(Material.ROCK, "wall_cabinet");
@@ -294,26 +299,26 @@ public class FurnitureBlocks
         SHOWER_HEAD_OFF = new BlockShowerHeadOff(Material.ROCK, "shower_head_off");
         SHOWER_HEAD_ON = new BlockShowerHeadOn(Material.ROCK, "shower_head_on");
         BIN = new BlockBin(Material.ROCK, "bin");
-        MODERN_BIN = new BlockBin(Material.ROCK, "modern_bin");
-        WHEELIE_BIN = new BlockWheelieBin(Material.CLAY, "wheelie_bin");
+        MODERN_BIN = new BlockBin(Material.IRON, "modern_bin");
+        WHEELIE_BIN = new BlockWheelieBin(Material.ROCK, "wheelie_bin");
         TREE_TOP = new BlockTree(Material.WOOD, true, "tree_top");
         TREE_BOTTOM = new BlockTree(Material.WOOD, false, "tree_bottom");
         PRESENT = new BlockPresent(Material.CLOTH, "present");
-        TOASTER = new BlockToaster(Material.ROCK, "toaster");
-        MICROWAVE = new BlockMicrowave(Material.WOOD, "microwave");
-        WASHING_MACHINE = new BlockWashingMachine(Material.ROCK, "washing_machine");
+        TOASTER = new BlockToaster(Material.IRON, "toaster");
+        MICROWAVE = new BlockMicrowave(Material.IRON, "microwave");
+        WASHING_MACHINE = new BlockWashingMachine(Material.IRON, "washing_machine");
         COOKIE_JAR = new BlockCookieJar(Material.GLASS, "cookie_jar");
-        BLENDER = new BlockBlender(Material.GLASS, "blender");
+        BLENDER = new BlockBlender(Material.IRON, "blender");
         CUP = new BlockCup(Material.GLASS, "cup");
         BOTTLE = new BlockBottle(Material.GLASS, "bottle");
         PLATE = new BlockPlate(Material.GLASS, "plate");
         COUNTER = new BlockCounter(Material.ROCK, "counter");
         COUNTER_SINK = new BlockCounterSink(Material.ROCK, "counter_sink");
         COUNTER_DRAWER = new BlockCounterDrawer(Material.ROCK, "counter_drawer");
-        DISHWASHER = new BlockDishwasher(Material.ROCK, "dishwasher");
+        DISHWASHER = new BlockDishwasher(Material.IRON, "dishwasher");
         KITCHEN_CABINET = new BlockCabinetKitchen(Material.WOOD, "cabinet_kitchen");
         CHOPPING_BOARD = new BlockChoppingBoard(Material.WOOD, "chopping_board");
-        BAR_STOOL = new BlockBarStool(Material.WOOD, "bar_stool");
+        BAR_STOOL = new BlockBarStool(Material.ROCK, "bar_stool");
         MIRROR = new BlockMirror(Material.GLASS, "mirror");
         MANTEL_PIECE = new BlockMantelPiece(Material.ROCK, "mantel_piece");
         GRAND_CHAIR_TOP = new BlockGrandChair(Material.WOOD, true, "grand_chair_top");
@@ -324,7 +329,7 @@ public class FurnitureBlocks
         FAIRY_LIGHT = new BlockFairyLight(Material.GLASS, "fairy_light");
         FIRE_PIT_OFF = new BlockFirePitOff(Material.WOOD, "fire_pit_off");
         FIRE_PIT_ON = new BlockFirePitOn(Material.WOOD, "fire_pit_on");
-        TRAMPOLINE = new BlockTrampoline(Material.ROCK, "trampoline");
+        TRAMPOLINE = new BlockTrampoline(Material.IRON, "trampoline");
         CRATE = new BlockCrate(Material.WOOD, "crate");
         BENCH = new BlockBench(Material.WOOD, "bench");
         TABLE_OUTDOOR = new BlockOutdoorTable(Material.WOOD, SoundType.WOOD, "table_outdoor");
@@ -387,7 +392,7 @@ public class FurnitureBlocks
         DISPLAY_FRAME = new BlockDisplayFrame("display_frame");
         MODERN_COUCH = new BlockModernCouch("modern_couch");
         MODERN_TABLE = new BlockModernTable("modern_table");
-        MODERN_CHAIR = new BlockChair(Material.WOOD, SoundType.WOOD, "modern_chair");
+        MODERN_CHAIR = new BlockChair(Material.ROCK, SoundType.STONE, "modern_chair");
         CRATE_SPRUCE = new BlockCrate(Material.WOOD, "crate_spruce");
         CRATE_BIRCH = new BlockCrate(Material.WOOD, "crate_birch");
         CRATE_JUNGLE = new BlockCrate(Material.WOOD, "crate_jungle");
@@ -396,7 +401,7 @@ public class FurnitureBlocks
         MODERN_BED_TOP = new BlockModernBed("modern_bed_top");
         MODERN_BED_BOTTOM = new BlockModernBed("modern_bed_bottom");
         TV_STAND = new BlockTVStand("tv_stand");
-        MODERN_COFFEE_TABLE = new BlockCoffeeTable(Material.WOOD, SoundType.WOOD, "modern_coffee_table");
+        MODERN_COFFEE_TABLE = new BlockCoffeeTable(Material.ROCK, SoundType.STONE, "modern_coffee_table");
         MODERN_STAIRS = new BlockModernStair("modern_stair");
         MODERN_OAK_STAIR = new BlockModernOakStair("modern_oak_stair");
         MODERN_TABLE_OUTDOOR = new BlockModernTable("modern_table_outdoor");
@@ -521,6 +526,7 @@ public class FurnitureBlocks
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
         CUP_OLD = new BlockOldCup(Material.GLASS, "cup_old");
         CUSHION = new BlockCushion(Material.CLOTH, "cushion");
+        SOLAR_PANEL = new BlockSolarPanel(Material.IRON, "solar_panel");
     }
 
     public static void register()
@@ -617,6 +623,8 @@ public class FurnitureBlocks
         registerBlock(MAIL_BOX_JUNGLE);
         registerBlock(MAIL_BOX_ACACIA);
         registerBlock(MAIL_BOX_DARK_OAK);
+        registerBlock(MODERN_MAIL_BOX_LIGHT);
+        registerBlock(MODERN_MAIL_BOX_DARK);
         registerBlock(TV);
         registerBlock(RETRO_TV);
         registerBlock(COMPUTER);
@@ -785,6 +793,7 @@ public class FurnitureBlocks
         registerBlock(RADIATOR);
         registerBlock(FIGURINE_MRCRAYFISH);
         registerBlock(CUSHION);
+        registerBlock(SOLAR_PANEL);
 
         if(ConfigurationHandler.legacyFurniture)
         {

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "cfm:modern_mail_box_dark", "y": 180 },
+    "facing=east":  { "model": "cfm:modern_mail_box_dark", "y": 270 },
+    "facing=south": { "model": "cfm:modern_mail_box_dark", "y": 0 },
+    "facing=west":  { "model": "cfm:modern_mail_box_dark", "y": 90 }
+  }
+}

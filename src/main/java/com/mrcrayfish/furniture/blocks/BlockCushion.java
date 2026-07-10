@@ -9,6 +9,7 @@ import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -65,6 +66,24 @@ public class BlockCushion extends Block
             }
         }
         return false;
+    }
+
+    @Override
+    public void onLanded(World worldIn, Entity entityIn)
+    {
+        if(entityIn.isSneaking())
+        {
+            super.onLanded(worldIn, entityIn);
+        }
+        else if(entityIn.motionY < 0.0D)
+        {
+            entityIn.motionY = -entityIn.motionY * 0.8D;
+
+            if(!(entityIn instanceof EntityLivingBase))
+            {
+                entityIn.motionY *= 0.8D;
+            }
+        }
     }
 
     @Override

@@ -1,0 +1,31 @@
+{
+    "result": {
+        "item": "cfm:item_gpu_laptop"
+    },
+    "pattern": [
+        "OGO",
+        "RMP",
+        "CCC"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "O": {
+            "item": "minecraft:obsidian"
+        },
+        "G": {
+            "item": "cfm:item_golden_wire"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "M": {
+            "item": "cfm:item_ddr5_ram"
+        },
+        "P": {
+            "item": "minecraft:prismarine_shard"
+        },
+        "C": {
+            "item": "cfm:item_circuit_board"
+        }
+    }
+}

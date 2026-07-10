@@ -1,0 +1,28 @@
+{
+    "result": {
+        "item": "cfm:item_cpu_desktop"
+    },
+    "pattern": [
+        "ICI",
+        "RDR",
+        "IBI"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "D": {
+            "item": "minecraft:diamond_block"
+        },
+        "C": {
+            "item": "minecraft:clock"
+        },
+        "B": {
+            "item": "cfm:item_circuit_board"
+        }
+    }
+}

@@ -16,10 +16,10 @@
       "item": "minecraft:redstone_block"
     },
     "*": {
-      "item": "minecraft:repeater"
+      "item": "cfm:item_ddr5_ram"
     },
     "-": {
-      "item": "minecraft:comparator"
+      "item": "cfm:item_cpu_desktop"
     },
     "_": {
       "item": "cfm:item_wifi_card"

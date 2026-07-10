@@ -4,8 +4,8 @@
   },
   "pattern": [
     "*4*",
-    "121",
-    "-5-"
+    "126",
+    "-57"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
@@ -26,6 +26,12 @@
 	},
     "4": {
       "item": "cfm:item_wifi_card"
+	},
+    "6": {
+      "item": "cfm:item_hard_drive"
+	},
+    "7": {
+      "item": "cfm:item_cpu_desktop"
     }
   }
 }

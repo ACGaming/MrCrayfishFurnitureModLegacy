@@ -1,0 +1,97 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+	"textures": {
+		"0": "cfm:items/item_cpu_desktop",
+		"1": "cfm:items/item_cpu_desktop_back"
+	},
+	"elements": [
+		{
+			"name": "base_1",
+			"from": [0.5, 0, 0.5],
+			"to": [15.5, 1, 8.5],
+			"faces": {
+				"north": {"uv": [0.5, 0.5, 15.5, 1], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [15, 0.5, 15.5, 8.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0.5, 8, 15.5, 8.5], "texture": "#0"},
+				"west": {"uv": [0.5, 0.5, 1, 8.5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [0.5, 0.5, 15.5, 8.5], "texture": "#0"},
+				"down": {"uv": [0.5, 7.5, 15.5, 15.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "base_2",
+			"from": [1, 0, 8.5],
+			"to": [15, 1, 10.5],
+			"faces": {
+				"east": {"uv": [14.5, 8, 15, 11], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [1, 8, 1.5, 11], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [1, 8.5, 15, 10.5], "texture": "#0"},
+				"down": {"uv": [1, 5.5, 15, 7.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "base_3",
+			"from": [0.5, 0, 10.5],
+			"to": [15.5, 1, 15.5],
+			"faces": {
+				"north": {"uv": [0.5, 10.5, 15.5, 11], "texture": "#0"},
+				"east": {"uv": [15, 11, 15.5, 15.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0.5, 15, 15.5, 15.5], "texture": "#0"},
+				"west": {"uv": [0.5, 11, 1, 15.5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0.5, 10.5, 15.5, 15.5], "texture": "#0"},
+				"down": {"uv": [0.5, 0.5, 15.5, 5.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "cpu_1",
+			"from": [2.5, 1, 2.5],
+			"to": [13.5, 1.4, 13.5],
+			"faces": {
+				"north": {"uv": [2.5, 2.5, 13.5, 3], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [13, 2.5, 13.5, 13.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [2.5, 13, 13.5, 13.5], "texture": "#0"},
+				"west": {"uv": [2.5, 2.5, 3, 13.5], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [2.5, 2.5, 13.5, 13.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "cpu_2",
+			"from": [4, 1.4, 4],
+			"to": [12, 1.6, 12],
+			"faces": {
+				"north": {"uv": [4, 4, 12, 4.5], "texture": "#0"},
+				"east": {"uv": [11.5, 4, 12, 12], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [4, 11.5, 12, 12], "texture": "#0"},
+				"west": {"uv": [4, 4, 4.5, 12], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 2.25],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -45, 0],
+			"translation": [-0.25, 5, 1],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"translation": [0, 2, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"rotation": [-90, 180, 0],
+			"translation": [0, 0, -4],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

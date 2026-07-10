@@ -75,11 +75,18 @@ public class FurnitureItems
     public static final Item SCREEN;
     public static final Item CIRCUIT_BOARD;
     public static final Item CONTROLLER_UNIT;
+    public static final Item DDR5_RAM;
+    public static final Item CPU_DESKTOP;
+    public static final Item GPU_LAPTOP;
     public static final Item WIFI_CARD;
+    public static final Item FLASH_CHIP;
     public static final Item GOLDEN_WIRE;
     public static final Item PRINTER_CARRIAGE;
     public static final Item SMALL_ELECTRIC_MOTOR;
     public static final Item BATTERY;
+    public static final Item HARD_DRIVE;
+    public static final Item HARD_DRIVE_PLATTER;
+    public static final Item SOLID_STATE_DRIVE;
 
     /**
      * Nostalgia Update
@@ -135,14 +142,21 @@ public class FurnitureItems
         NATURAL_PLASTIC_UNREFINED = new ItemGeneric().setTranslationKey("item_natural_plastic_unrefined").setRegistryName("item_natural_plastic_unrefined");
         NATURAL_PLASTIC = new ItemGeneric().setTranslationKey("item_natural_plastic").setRegistryName("item_natural_plastic");
         NATURAL_PLASTIC_FRAME = new ItemGeneric().setTranslationKey("item_natural_plastic_frame").setRegistryName("item_natural_plastic_frame");
-        SCREEN = new ItemGeneric().setTranslationKey("item_screen").setRegistryName("item_screen");
-        CIRCUIT_BOARD = new ItemGeneric().setTranslationKey("item_circuit_board").setRegistryName("item_circuit_board");
-        CONTROLLER_UNIT = new ItemGeneric().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
+        SCREEN = new ItemComponent().setTranslationKey("item_screen").setRegistryName("item_screen");
+        CIRCUIT_BOARD = new ItemComponent().setTranslationKey("item_circuit_board").setRegistryName("item_circuit_board");
+        CONTROLLER_UNIT = new ItemComponent().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
+        DDR5_RAM = new ItemGeneric().setTranslationKey("item_ddr5_ram").setRegistryName("item_ddr5_ram");
+        CPU_DESKTOP = new ItemGeneric().setTranslationKey("item_cpu_desktop").setRegistryName("item_cpu_desktop");
+        GPU_LAPTOP = new ItemGeneric().setTranslationKey("item_gpu_laptop").setRegistryName("item_gpu_laptop");
         WIFI_CARD = new ItemGeneric().setTranslationKey("item_wifi_card").setRegistryName("item_wifi_card");
-        GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
-        PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
-        SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
-        BATTERY = new ItemGeneric().setTranslationKey("item_battery").setRegistryName("item_battery");
+        FLASH_CHIP = new ItemComponent().setTranslationKey("item_flash_chip").setRegistryName("item_flash_chip");
+        GOLDEN_WIRE = new ItemComponent().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
+        PRINTER_CARRIAGE = new ItemComponent().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
+        SMALL_ELECTRIC_MOTOR = new ItemComponent().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
+        BATTERY = new ItemComponent().setTranslationKey("item_battery").setRegistryName("item_battery");
+        HARD_DRIVE = new ItemComponent().setTranslationKey("item_hard_drive").setRegistryName("item_hard_drive");
+        HARD_DRIVE_PLATTER = new ItemComponent().setTranslationKey("item_hard_drive_platter").setRegistryName("item_hard_drive_platter");
+        SOLID_STATE_DRIVE = new ItemComponent().setTranslationKey("item_solid_state_drive").setRegistryName("item_solid_state_drive");
     }
 
     public static void register()
@@ -196,11 +210,18 @@ public class FurnitureItems
         registerItem(SCREEN);
         registerItem(CIRCUIT_BOARD);
         registerItem(CONTROLLER_UNIT);
+        registerItem(DDR5_RAM);
+        registerItem(CPU_DESKTOP);
+        registerItem(GPU_LAPTOP);
         registerItem(WIFI_CARD);
+        registerItem(FLASH_CHIP);
         registerItem(GOLDEN_WIRE);
         registerItem(PRINTER_CARRIAGE);
         registerItem(SMALL_ELECTRIC_MOTOR);
         registerItem(BATTERY);
+        registerItem(HARD_DRIVE);
+        registerItem(HARD_DRIVE_PLATTER);
+        registerItem(SOLID_STATE_DRIVE);
     }
 
     private static void registerItem(Item item)

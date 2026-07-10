@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "normal": {"model": "cfm:solar_panel"},
+    "facing=north": {"model": "cfm:solar_panel", "y": 0},
+    "facing=east": {"model": "cfm:solar_panel", "y": 90},
+    "facing=south": {"model": "cfm:solar_panel", "y": 180},
+    "facing=west": {"model": "cfm:solar_panel", "y": 270}
+  }
+}
