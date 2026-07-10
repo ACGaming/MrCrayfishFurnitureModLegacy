@@ -1,0 +1,26 @@
+{
+    "result": {
+        "item": "cfm:item_ethernet_cable"
+    },
+    "pattern": [
+        "PIL",
+        "GIG",
+        "LIP"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "P": {
+            "item": "cfm:item_natural_plastic"
+        },
+        "L": {
+            "item": "minecraft:dye",
+            "data": 4
+        },
+        "G": {
+            "item": "cfm:item_golden_wire"
+        }
+    }
+}
