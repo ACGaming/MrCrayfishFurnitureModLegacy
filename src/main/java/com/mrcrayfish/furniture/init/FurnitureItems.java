@@ -81,6 +81,7 @@ public class FurnitureItems
     public static final Item WIFI_CARD;
     public static final Item FLASH_CHIP;
     public static final Item GOLDEN_WIRE;
+    public static final Item ETHERNET_CABLE;
     public static final Item PRINTER_CARRIAGE;
     public static final Item SMALL_ELECTRIC_MOTOR;
     public static final Item BATTERY;
@@ -151,6 +152,7 @@ public class FurnitureItems
         WIFI_CARD = new ItemGeneric().setTranslationKey("item_wifi_card").setRegistryName("item_wifi_card");
         FLASH_CHIP = new ItemComponent().setTranslationKey("item_flash_chip").setRegistryName("item_flash_chip");
         GOLDEN_WIRE = new ItemComponent().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
+        ETHERNET_CABLE = new ItemGeneric().setTranslationKey("item_ethernet_cable").setRegistryName("item_ethernet_cable");
         PRINTER_CARRIAGE = new ItemComponent().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
         SMALL_ELECTRIC_MOTOR = new ItemComponent().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
         BATTERY = new ItemComponent().setTranslationKey("item_battery").setRegistryName("item_battery");
@@ -216,6 +218,7 @@ public class FurnitureItems
         registerItem(WIFI_CARD);
         registerItem(FLASH_CHIP);
         registerItem(GOLDEN_WIRE);
+        registerItem(ETHERNET_CABLE);
         registerItem(PRINTER_CARRIAGE);
         registerItem(SMALL_ELECTRIC_MOTOR);
         registerItem(BATTERY);
