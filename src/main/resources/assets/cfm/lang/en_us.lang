@@ -61,6 +61,7 @@ item.item_ddr5_ram.name=DDR5 RAM Module (16 Go)
 item.item_cpu_desktop.name=Desktop Processor
 item.item_gpu_laptop.name=Laptop GPU
 item.item_wifi_card.name=Wi-Fi Card
+item.item_motherboard_desktop.name=Desktop Motherboard
 item.item_flash_chip.name=Flash Chip
 item.item_golden_wire.name=Golden Wire
 item.item_ethernet_cable.name=Ethernet Cable

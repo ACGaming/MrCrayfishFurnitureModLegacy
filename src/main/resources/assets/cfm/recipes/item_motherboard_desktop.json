@@ -1,0 +1,31 @@
+{
+    "result": {
+        "item": "cfm:item_motherboard_desktop"
+    },
+    "pattern": [
+        "CSR",
+        "GBG",
+        "TTT"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "C": {
+            "item": "minecraft:comparator"
+        },
+        "S": {
+            "item": "minecraft:daylight_detector"
+        },
+        "R": {
+            "item": "minecraft:repeater"
+        },
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "B": {
+            "item": "minecraft:redstone_block"
+        },
+        "T": {
+            "item": "cfm:item_circuit_board"
+        }
+    }
+}
