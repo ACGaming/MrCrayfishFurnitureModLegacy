@@ -27,10 +27,10 @@ public class ItemDesktopMotherboard extends ItemComponent
         NBTTagCompound tag = stack.getTagCompound();
         if(!GuiScreen.isShiftKeyDown())
         {
-            tooltip.add("CPU: " + getComponentStatus(tag, "cpu"));
-            tooltip.add("RAM: " + getComponentStatus(tag, "ram"));
-            tooltip.add("GPU: " + getComponentStatus(tag, "gpu"));
-            tooltip.add("WIFI: " + getComponentStatus(tag, "wifi"));
+            tooltip.add("CPU: " + getComponentStatus(tag, "item_cpu_desktop"));
+            tooltip.add("RAM: " + getComponentStatus(tag, "item_ddr5_ram"));
+            tooltip.add("GPU: " + getComponentStatus(tag, "item_gpu_laptop"));
+            tooltip.add("WIFI: " + getComponentStatus(tag, "item_wifi_card"));
             tooltip.add(TextFormatting.YELLOW + "Hold shift for help");
         }
         else
