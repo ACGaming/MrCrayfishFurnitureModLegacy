@@ -9,8 +9,10 @@ import net.minecraft.item.Item;
 
 public class ItemComponent extends Item
 {
-    public ItemComponent()
+    public ItemComponent(String id)
     {
-        this.setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
+        setRegistryName(id);
+        setTranslationKey(id);
     }
 }

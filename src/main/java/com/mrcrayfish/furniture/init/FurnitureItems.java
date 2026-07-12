@@ -144,23 +144,23 @@ public class FurnitureItems
         NATURAL_PLASTIC_UNREFINED = new ItemGeneric().setTranslationKey("item_natural_plastic_unrefined").setRegistryName("item_natural_plastic_unrefined");
         NATURAL_PLASTIC = new ItemGeneric().setTranslationKey("item_natural_plastic").setRegistryName("item_natural_plastic");
         NATURAL_PLASTIC_FRAME = new ItemGeneric().setTranslationKey("item_natural_plastic_frame").setRegistryName("item_natural_plastic_frame");
-        SCREEN = new ItemComponent().setTranslationKey("item_screen").setRegistryName("item_screen");
-        CIRCUIT_BOARD = new ItemComponent().setTranslationKey("item_circuit_board").setRegistryName("item_circuit_board");
-        CONTROLLER_UNIT = new ItemComponent().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
-        DDR5_RAM = new ItemGeneric().setTranslationKey("item_ddr5_ram").setRegistryName("item_ddr5_ram");
-        CPU_DESKTOP = new ItemGeneric().setTranslationKey("item_cpu_desktop").setRegistryName("item_cpu_desktop");
-        GPU_LAPTOP = new ItemGeneric().setTranslationKey("item_gpu_laptop").setRegistryName("item_gpu_laptop");
-        WIFI_CARD = new ItemGeneric().setTranslationKey("item_wifi_card").setRegistryName("item_wifi_card");
-        MOTHERBOARD_DESKTOP = new ItemGeneric().setTranslationKey("item_motherboard_desktop").setRegistryName("item_motherboard_desktop");
-        FLASH_CHIP = new ItemComponent().setTranslationKey("item_flash_chip").setRegistryName("item_flash_chip");
-        GOLDEN_WIRE = new ItemComponent().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
+        SCREEN = new ItemGeneric().setTranslationKey("item_screen").setRegistryName("item_screen");
+        CIRCUIT_BOARD = new ItemGeneric().setTranslationKey("item_circuit_board").setRegistryName("item_circuit_board");
+        CONTROLLER_UNIT = new ItemGeneric().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
+        DDR5_RAM = new ItemDesktopMotherboard.Component("item_ddr5_ram");
+        CPU_DESKTOP = new ItemDesktopMotherboard.Component("item_cpu_desktop");
+        GPU_LAPTOP = new ItemDesktopMotherboard.Component("item_gpu_laptop");
+        WIFI_CARD = new ItemDesktopMotherboard.Component("item_wifi_card");
+        MOTHERBOARD_DESKTOP = new ItemDesktopMotherboard();
+        FLASH_CHIP = new ItemGeneric().setTranslationKey("item_flash_chip").setRegistryName("item_flash_chip");
+        GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
         ETHERNET_CABLE = new ItemGeneric().setTranslationKey("item_ethernet_cable").setRegistryName("item_ethernet_cable");
-        PRINTER_CARRIAGE = new ItemComponent().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
-        SMALL_ELECTRIC_MOTOR = new ItemComponent().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
-        BATTERY = new ItemComponent().setTranslationKey("item_battery").setRegistryName("item_battery");
-        HARD_DRIVE = new ItemComponent().setTranslationKey("item_hard_drive").setRegistryName("item_hard_drive");
-        HARD_DRIVE_PLATTER = new ItemComponent().setTranslationKey("item_hard_drive_platter").setRegistryName("item_hard_drive_platter");
-        SOLID_STATE_DRIVE = new ItemComponent().setTranslationKey("item_solid_state_drive").setRegistryName("item_solid_state_drive");
+        PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
+        SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
+        BATTERY = new ItemGeneric().setTranslationKey("item_battery").setRegistryName("item_battery");
+        HARD_DRIVE = new ItemGeneric().setTranslationKey("item_hard_drive").setRegistryName("item_hard_drive");
+        HARD_DRIVE_PLATTER = new ItemGeneric().setTranslationKey("item_hard_drive_platter").setRegistryName("item_hard_drive_platter");
+        SOLID_STATE_DRIVE = new ItemGeneric().setTranslationKey("item_solid_state_drive").setRegistryName("item_solid_state_drive");
     }
 
     public static void register()

@@ -2,6 +2,7 @@ package com.mrcrayfish.furniture.init;
 
 import com.google.gson.JsonObject;
 import com.mrcrayfish.furniture.handler.FuelHandler;
+import com.mrcrayfish.furniture.recipe.RecipeDesktopMotherboard;
 import com.mrcrayfish.furniture.util.RecipeUtil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -31,6 +32,7 @@ public class FurnitureCrafting
         GameRegistry.addSmelting(FurnitureItems.FLESH, new ItemStack(FurnitureItems.COOKED_FLESH), 0.05F);
         GameRegistry.registerFuelHandler(new FuelHandler());
         RegistrationHandler.Recipes.add(new RecipeSoapyWater().setRegistryName("cfm:recipe_soapy_water"));
+        RegistrationHandler.Recipes.add(new RecipeDesktopMotherboard());
     }
 
     private static class RecipeSoapyWater extends net.minecraftforge.registries.IForgeRegistryEntry.Impl<IRecipe> implements IRecipe
