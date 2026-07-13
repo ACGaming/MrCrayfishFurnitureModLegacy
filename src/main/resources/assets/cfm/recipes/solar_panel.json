@@ -1,0 +1,31 @@
+{
+  "result": {
+    "item": "cfm:solar_panel"
+  },
+  "pattern": [
+    "323",
+    "454",
+    "616"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "1": {
+      "item": "cfm:item_golden_wire"
+    },
+    "2": {
+      "item": "minecraft:glass_pane"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+	},
+    "4": {
+      "item": "minecraft:comparator"
+	},
+    "5": {
+      "item": "minecraft:daylight_detector"
+	},
+    "6": {
+      "item": "minecraft:redstone"
+    }
+  }
+}
