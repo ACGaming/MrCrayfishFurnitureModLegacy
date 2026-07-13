@@ -276,6 +276,9 @@ public class TileEntityPrinter extends TileEntityFurniture implements ISidedInve
     @Override
     public void openInventory(EntityPlayer player)
     {
-        world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.printer, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+        if(!this.isPrinting())
+        {
+            world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.printer, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+        }
     }
 }
