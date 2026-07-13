@@ -46,6 +46,7 @@ public class FurnitureSounds
     public static SoundEvent oven_close;
     public static SoundEvent oven_open;
     public static SoundEvent printer;
+    public static SoundEvent printer_paper;
     public static SoundEvent service_bell;
     public static SoundEvent shower;
     public static SoundEvent sizzle;
@@ -105,6 +106,7 @@ public class FurnitureSounds
         oven_close = registerSound("cfm:oven_close");
         oven_open = registerSound("cfm:oven_open");
         printer = registerSound("cfm:printer");
+        printer_paper = registerSound("cfm:printer_paper");
         service_bell = registerSound("cfm:service_bell");
         shower = registerSound("cfm:shower");
         sizzle = registerSound("cfm:sizzle");

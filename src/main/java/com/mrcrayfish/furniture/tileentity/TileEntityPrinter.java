@@ -107,6 +107,9 @@ public class TileEntityPrinter extends TileEntityFurniture implements ISidedInve
             {
                 ++this.printingTime;
 
+                if(this.printingTime % 20 == 0)
+                    world.playSound(pos.getX(), pos.getY(), pos.getZ(), FurnitureSounds.printer_paper, SoundCategory.BLOCKS, 1.0F, 1.0F, true);
+
                 if(!flag)
                 {
                     TileEntityUtil.markBlockForUpdate(world, pos);

@@ -424,6 +424,14 @@
       }
     ]
   },
+  "printer_paper": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "cfm:printer_paper"
+      }
+    ]
+  },
   "tv_remote": {
     "category": "player",
     "sounds": [
