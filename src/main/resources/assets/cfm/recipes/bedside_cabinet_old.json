@@ -4,14 +4,11 @@
   },
   "pattern": [
     "***",
-    "*@*",
-    "1@1"
+    "*1*",
+    "*1*"
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "@": {
-      "item": "minecraft:chest"
-    },
 	"*": {
       "item": "minecraft:planks",
 	  "data": 0
