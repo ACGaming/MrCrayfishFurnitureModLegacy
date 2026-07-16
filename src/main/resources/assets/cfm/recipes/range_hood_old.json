@@ -4,7 +4,7 @@
     },
     "pattern": [
         " 3 ",
-        "424",
+        " 2 ",
         "313"
     ],
     "type": "minecraft:crafting_shaped",
@@ -19,9 +19,6 @@
         "3": {
             "item": "minecraft:quartz_block",
 			"data": 0
-		},
-        "4": {
-            "item": "minecraft:redstone"
         }
     }
 }

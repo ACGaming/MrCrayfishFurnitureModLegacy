@@ -3,17 +3,17 @@
     "item": "cfm:bird_house"
   },
   "pattern": [
-    "UIU",
-    "U U",
-    "III"
+    " 2 ",
+    "2 2",
+    " 1 "
   ],
   "type": "minecraft:crafting_shaped",
   "key": {
-    "I": {
-      "item": "minecraft:planks",
+    "1": {
+      "item": "minecraft:wooden_slab",
       "data": 0
 	  },
-    "U": {
+    "2": {
       "item": "minecraft:log",
       "data": 0
     }

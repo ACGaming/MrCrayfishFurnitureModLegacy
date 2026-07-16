@@ -17,7 +17,8 @@
             "item": "cfm:item_light_bulb"
         },
         "P": {
-            "item": "minecraft:glass_pane"
+            "item": "minecraft:stained_glass_pane",
+			"data": 0
         }
     }
 }
