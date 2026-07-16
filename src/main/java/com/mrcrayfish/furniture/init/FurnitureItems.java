@@ -81,6 +81,7 @@ public class FurnitureItems
     public static final Item WIFI_CARD;
     public static final Item MOTHERBOARD_DESKTOP;
     public static final Item FLASH_CHIP;
+    public static final Item GPU_DESKTOP;
     public static final Item GOLDEN_WIRE;
     public static final Item ETHERNET_CABLE;
     public static final Item PRINTER_CARRIAGE;
@@ -154,6 +155,7 @@ public class FurnitureItems
         MOTHERBOARD_DESKTOP = new ItemDesktopMotherboard();
         FLASH_CHIP = new ItemGeneric().setTranslationKey("item_flash_chip").setRegistryName("item_flash_chip");
         GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
+        GPU_DESKTOP = new ItemGeneric().setTranslationKey("item_gpu_desktop").setRegistryName("item_gpu_desktop");
         ETHERNET_CABLE = new ItemGeneric().setTranslationKey("item_ethernet_cable").setRegistryName("item_ethernet_cable");
         PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
         SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
@@ -221,6 +223,7 @@ public class FurnitureItems
         registerItem(MOTHERBOARD_DESKTOP);
         registerItem(FLASH_CHIP);
         registerItem(GOLDEN_WIRE);
+        registerItem(GPU_DESKTOP);
         registerItem(ETHERNET_CABLE);
         registerItem(PRINTER_CARRIAGE);
         registerItem(SMALL_ELECTRIC_MOTOR);

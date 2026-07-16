@@ -64,6 +64,7 @@ item.item_wifi_card.name=Wi-Fi Card
 item.item_motherboard_desktop.name=Desktop Motherboard
 item.item_flash_chip.name=Flash Chip
 item.item_golden_wire.name=Golden Wire
+item.item_gpu_desktop.name=Desktop GPU
 item.item_ethernet_cable.name=Ethernet Cable
 item.item_printer_carriage.name=Printer Carriage
 item.item_small_electric_motor.name=Small Electric Motor
