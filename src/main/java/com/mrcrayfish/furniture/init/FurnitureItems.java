@@ -150,12 +150,12 @@ public class FurnitureItems
         CONTROLLER_UNIT = new ItemGeneric().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
         DDR5_RAM = new ItemDesktopMotherboard.Component("item_ddr5_ram");
         CPU_DESKTOP = new ItemDesktopMotherboard.Component("item_cpu_desktop");
-        GPU_LAPTOP = new ItemDesktopMotherboard.Component("item_gpu_laptop");
+        GPU_LAPTOP = new ItemGeneric().setTranslationKey("item_gpu_laptop").setRegistryName("item_gpu_laptop");
         WIFI_CARD = new ItemDesktopMotherboard.Component("item_wifi_card");
         MOTHERBOARD_DESKTOP = new ItemDesktopMotherboard();
         FLASH_CHIP = new ItemGeneric().setTranslationKey("item_flash_chip").setRegistryName("item_flash_chip");
         GOLDEN_WIRE = new ItemGeneric().setTranslationKey("item_golden_wire").setRegistryName("item_golden_wire");
-        GPU_DESKTOP = new ItemGeneric().setTranslationKey("item_gpu_desktop").setRegistryName("item_gpu_desktop");
+        GPU_DESKTOP = new ItemDesktopMotherboard.Component("item_gpu_desktop");
         ETHERNET_CABLE = new ItemGeneric().setTranslationKey("item_ethernet_cable").setRegistryName("item_ethernet_cable");
         PRINTER_CARRIAGE = new ItemGeneric().setTranslationKey("item_printer_carriage").setRegistryName("item_printer_carriage");
         SMALL_ELECTRIC_MOTOR = new ItemGeneric().setTranslationKey("item_small_electric_motor").setRegistryName("item_small_electric_motor");
