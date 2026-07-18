@@ -5,7 +5,7 @@
 		"0": "cfm:blocks/model_block_dark",
 		"1": "cfm:blocks/on_1",
 		"2": "cfm:blocks/tv_texture",
-		"3": "cfm:blocks/screen_pixelbox",
+		"3": "cfm:blocks/screen",
 		"4": "cfm:blocks/model_block_light",
 		"particle": "cfm:blocks/model_block_dark"
 	},

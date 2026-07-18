@@ -55,6 +55,7 @@ item.item_natural_plastic_unrefined.name=Natural Plastic Unrefined
 item.item_natural_plastic.name=Natural Plastic
 item.item_natural_plastic_frame.name=Natural Plastic Frame
 item.item_screen.name=Screen
+item.item_small_screen.name=Small Screen
 item.item_circuit_board.name=Circuit Board
 item.item_controller_unit.name=Controller Unit
 item.item_ddr5_ram.name=DDR5 RAM Module (16 Go)

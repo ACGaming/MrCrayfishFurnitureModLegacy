@@ -73,6 +73,7 @@ public class FurnitureItems
     public static final Item NATURAL_PLASTIC;
     public static final Item NATURAL_PLASTIC_FRAME;
     public static final Item SCREEN;
+    public static final Item SMALL_SCREEN;
     public static final Item CIRCUIT_BOARD;
     public static final Item CONTROLLER_UNIT;
     public static final Item DDR5_RAM;
@@ -146,6 +147,7 @@ public class FurnitureItems
         NATURAL_PLASTIC = new ItemGeneric().setTranslationKey("item_natural_plastic").setRegistryName("item_natural_plastic");
         NATURAL_PLASTIC_FRAME = new ItemGeneric().setTranslationKey("item_natural_plastic_frame").setRegistryName("item_natural_plastic_frame");
         SCREEN = new ItemGeneric().setTranslationKey("item_screen").setRegistryName("item_screen");
+        SMALL_SCREEN = new ItemGeneric().setTranslationKey("item_small_screen").setRegistryName("item_small_screen");
         CIRCUIT_BOARD = new ItemGeneric().setTranslationKey("item_circuit_board").setRegistryName("item_circuit_board");
         CONTROLLER_UNIT = new ItemGeneric().setTranslationKey("item_controller_unit").setRegistryName("item_controller_unit");
         DDR5_RAM = new ItemDesktopMotherboard.Component("item_ddr5_ram");
@@ -214,6 +216,7 @@ public class FurnitureItems
         registerItem(NATURAL_PLASTIC);
         registerItem(NATURAL_PLASTIC_FRAME);
         registerItem(SCREEN);
+        registerItem(SMALL_SCREEN);
         registerItem(CIRCUIT_BOARD);
         registerItem(CONTROLLER_UNIT);
         registerItem(DDR5_RAM);

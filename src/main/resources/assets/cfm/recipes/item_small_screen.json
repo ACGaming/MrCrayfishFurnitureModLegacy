@@ -1,0 +1,34 @@
+{
+    "result": {
+        "item": "cfm:item_small_screen"
+    },
+    "pattern": [
+        "RGB",
+        "333",
+        "4*4"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "R": {
+            "item": "minecraft:stained_glass_pane",
+            "data": 14
+        },
+        "G": {
+            "item": "minecraft:stained_glass_pane",
+            "data": 13
+        },
+        "B": {
+            "item": "minecraft:stained_glass_pane",
+            "data": 11
+        },
+        "3": {
+            "item": "minecraft:prismarine_crystals"
+        },
+        "4": {
+            "item": "cfm:item_controller_unit"
+        },
+        "*": {
+            "item": "cfm:item_natural_plastic_frame"
+        }
+    }
+}
