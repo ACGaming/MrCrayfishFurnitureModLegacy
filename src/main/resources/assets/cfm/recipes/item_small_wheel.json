@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "cfm:item_small_wheel",
+		"count": 2
+    },
+    "pattern": [
+        "P P",
+        "PIP",
+        "P P"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "P": {
+            "item": "cfm:item_natural_plastic"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        }
+    }
+}

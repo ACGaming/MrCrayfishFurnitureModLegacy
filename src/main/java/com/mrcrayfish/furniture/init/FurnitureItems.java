@@ -61,6 +61,7 @@ public class FurnitureItems
     public static final Item CRAYFISH;
     public static final Item CEILING_FAN_FANS;
     public static final Item WHEEL;
+    public static final Item SMALL_WHEEL;
     public static final Item DOG_FOOD;
     public static final Item CONSERVE_CAN;
     public static final Item LIGHT_BULB;
@@ -135,6 +136,7 @@ public class FurnitureItems
         OLD_TV_REMOTE = new ItemOldTvRemote();
         TV_REMOTE = new ItemTVRemote();
         WHEEL = new ItemGeneric().setTranslationKey("item_wheel").setRegistryName("item_wheel");
+        SMALL_WHEEL = new ItemGeneric().setTranslationKey("item_small_wheel").setRegistryName("item_small_wheel");
         DOG_FOOD = new ItemGeneric().setTranslationKey("item_dog_food").setRegistryName("item_dog_food");
         CAT_FOOD = new ItemGeneric().setTranslationKey("item_cat_food").setRegistryName("item_cat_food");
         CONSERVE_CAN = new ItemGeneric().setTranslationKey("item_conserve_can").setRegistryName("item_conserve_can");
@@ -204,6 +206,7 @@ public class FurnitureItems
         registerItem(OLD_TV_REMOTE);
         registerItem(TV_REMOTE);
         registerItem(WHEEL);
+        registerItem(SMALL_WHEEL);
         registerItem(DOG_FOOD);
         registerItem(CAT_FOOD);
         registerItem(CONSERVE_CAN);
