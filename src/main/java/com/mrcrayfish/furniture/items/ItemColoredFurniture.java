@@ -30,8 +30,8 @@ public class ItemColoredFurniture extends ItemBlock implements SubItems
     @Override
     public String getTranslationKey(ItemStack stack)
     {
-        return "tile." + getBlock().getRegistryName().getPath() + "_"
-                + EnumDyeColor.values()[stack.getItemDamage()].getName();
+        return "tile." + this.getBlock().getRegistryName().getPath()
+                + "_" + EnumDyeColor.values()[stack.getItemDamage()].getName();
     }
 
     @Override
@@ -49,16 +49,17 @@ public class ItemColoredFurniture extends ItemBlock implements SubItems
     @Override
     public NonNullList<ResourceLocation> getModels()
     {
-        NonNullList<ResourceLocation> modelLocations = NonNullList.create();
+        NonNullList<ResourceLocation> models = NonNullList.create();
 
         for(EnumDyeColor color : EnumDyeColor.values())
         {
-            modelLocations.add(new ResourceLocation(
+            models.add(new ResourceLocation(
                     Reference.MOD_ID,
-                    getBlock().getRegistryName().getPath() + "/" + color.getName()
+                    this.getBlock().getRegistryName().getPath()
+                            + "/" + color.getName()
             ));
         }
 
-        return modelLocations;
+        return models;
     }
 }
