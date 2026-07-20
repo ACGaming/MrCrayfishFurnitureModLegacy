@@ -123,6 +123,7 @@ public class FurnitureBlocks
     public static final Block SOLAR_PANEL;
     public static final Block MODERN_MAIL_BOX_LIGHT;
     public static final Block MODERN_MAIL_BOX_DARK;
+    public static final Block GAMING_CHAIR;
 
     /* Nostalgia Update */
     public static final Block WOODEN_CHAIR_OLD;
@@ -526,6 +527,7 @@ public class FurnitureBlocks
         BAR_STOOL_OLD = new BlockOldBarStool(Material.ROCK, "bar_stool_old");
         CUP_OLD = new BlockOldCup(Material.GLASS, "cup_old");
         CUSHION = new BlockCushion(Material.CLOTH, "cushion");
+        GAMING_CHAIR = new BlockGamingChair();
         SOLAR_PANEL = new BlockSolarPanel(Material.IRON, "solar_panel");
     }
 
@@ -793,6 +795,7 @@ public class FurnitureBlocks
         registerBlock(RADIATOR);
         registerBlock(FIGURINE_MRCRAYFISH);
         registerBlock(CUSHION);
+        registerBlock(GAMING_CHAIR, new ItemColoredFurniture(GAMING_CHAIR));
         registerBlock(SOLAR_PANEL);
 
         if(ConfigurationHandler.legacyFurniture)
