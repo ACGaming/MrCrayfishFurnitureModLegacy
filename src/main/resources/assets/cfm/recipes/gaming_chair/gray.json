@@ -1,0 +1,31 @@
+{
+    "result": {
+        "item": "cfm:gaming_chair",
+        "data": 7
+    },
+    "pattern": [
+        "CDC",
+        "CLC",
+        "WFW"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "key": {
+        "D": {
+            "item": "minecraft:wool",
+            "data": 7
+        },
+        "C": {
+            "item": "minecraft:concrete",
+            "data": 7
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "W": {
+            "item": "cfm:item_small_wheel"
+        },
+        "F": {
+            "item": "minecraft:iron_ingot"
+        }
+    }
+}
