@@ -13,6 +13,10 @@ import java.util.List;
  */
 public class EntityCustomSeat extends Entity
 {
+    public int blockPosX;
+    public int blockPosY;
+    public int blockPosZ;
+
     public EntityCustomSeat(World worldIn)
     {
         super(worldIn);
@@ -23,6 +27,11 @@ public class EntityCustomSeat extends Entity
     public EntityCustomSeat(World worldIn, BlockPos pos, double yOffset)
     {
         this(worldIn);
+
+        this.blockPosX = pos.getX();
+        this.blockPosY = pos.getY();
+        this.blockPosZ = pos.getZ();
+
         this.setPosition(pos.getX() + 0.5, pos.getY() + yOffset, pos.getZ() + 0.5);
     }
 
@@ -30,6 +39,15 @@ public class EntityCustomSeat extends Entity
     protected boolean shouldSetPosAfterLoading()
     {
         return false;
+    }
+
+    @Override
+    public void updatePassenger(Entity passenger)
+    {
+        if(this.isPassenger(passenger))
+        {
+            passenger.setPosition(this.posX, this.posY + this.getMountedYOffset() + passenger.getYOffset(), this.posZ);
+        }
     }
 
     @Override

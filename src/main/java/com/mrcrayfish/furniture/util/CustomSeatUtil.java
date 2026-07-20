@@ -11,21 +11,20 @@ import java.util.List;
 /**
  * Author: MrCrayfish
  */
-public class CustomSeatUtil
-{
-    public static void createSeatAndSit(World worldIn, BlockPos pos, EntityPlayer playerIn, double yOffset)
-    {
-        List<EntityCustomSeat> seats = worldIn.getEntitiesWithinAABB(EntityCustomSeat.class, new AxisAlignedBB(pos));
-        if(!seats.isEmpty())
-        {
-            EntityCustomSeat seat = seats.get(0);
-            if(seat.getRidingEntity() == null)
-            {
-                playerIn.startRiding(seat);
+public class CustomSeatUtil {
+    public static void createSeatAndSit(World worldIn, BlockPos pos, EntityPlayer playerIn, double yOffset) {
+        if (!worldIn.isRemote && !playerIn.isSneaking()) {
+            List<EntityCustomSeat> seats = worldIn.getEntitiesWithinAABB(EntityCustomSeat.class, new AxisAlignedBB(pos).grow(1D));
+
+            for (EntityCustomSeat seat : seats) {
+                if (seat.blockPosX == pos.getX() && seat.blockPosY == pos.getY() && seat.blockPosZ == pos.getZ()) {
+                    if (!seat.isBeingRidden()) {
+                        playerIn.startRiding(seat);
+                    }
+                    return;
+                }
             }
-        }
-        else
-        {
+
             EntityCustomSeat seat = new EntityCustomSeat(worldIn, pos, yOffset);
             worldIn.spawnEntity(seat);
             playerIn.startRiding(seat);

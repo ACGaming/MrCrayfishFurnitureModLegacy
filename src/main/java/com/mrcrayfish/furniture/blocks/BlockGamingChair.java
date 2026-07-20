@@ -12,6 +12,7 @@ import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.tileentity.TileEntity;
@@ -109,6 +110,13 @@ public class BlockGamingChair extends BlockDevice.Colored
     protected BlockStateContainer createBlockState()
     {
         return new BlockStateContainer(this, FACING, BlockColored.COLOR, TYPE);
+    }
+
+    @Override
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
+    {
+        return super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand)
+                .withProperty(BlockColored.COLOR, EnumDyeColor.byMetadata(meta));
     }
 
     public enum Type implements IStringSerializable

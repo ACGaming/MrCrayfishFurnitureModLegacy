@@ -30,8 +30,7 @@ public class ItemColoredFurniture extends ItemBlock implements SubItems
     @Override
     public String getTranslationKey(ItemStack stack)
     {
-        return "tile." + this.getBlock().getRegistryName().getPath()
-                + "_" + EnumDyeColor.values()[stack.getItemDamage()].getName();
+        return "tile.gaming_chair";
     }
 
     @Override
