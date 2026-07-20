@@ -1,4 +1,4 @@
-package com.mrcrayfish.furniture;
+package com.mrcrayfish.furniture.misc;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.DamageSource;

@@ -1,6 +1,6 @@
 package com.mrcrayfish.furniture.blocks;
 
-import com.mrcrayfish.furniture.DamageSourceElectrocution;
+import com.mrcrayfish.furniture.misc.DamageSourceElectrocution;
 import com.mrcrayfish.furniture.advancement.Triggers;
 import com.mrcrayfish.furniture.init.FurnitureSounds;
 import net.minecraft.block.SoundType;
