@@ -5,7 +5,7 @@
     "pattern": [
         "RGB",
         "PPP",
-        "CDC"
+        "I2I"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
@@ -24,11 +24,11 @@
         "P": {
             "item": "minecraft:prismarine_crystals"
         },
-        "C": {
-            "item": "cfm:item_controller_unit"
-        },
-        "D": {
-            "item": "minecraft:redstone"
+        "I": {
+            "item": "cfm:item_natural_plastic_frame"
+		},
+        "2": {
+            "item": "minecraft:glowstone"
         }
     }
 }

@@ -25,7 +25,7 @@
             "item": "minecraft:prismarine_crystals"
         },
         "4": {
-            "item": "cfm:item_controller_unit"
+            "item": "minecraft:glowstone_dust"
         },
         "*": {
             "item": "cfm:item_natural_plastic_frame"
