@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "blocks/concrete_silver",
 		"1": "cfm:blocks/model_block_dark",
-		"2": "cfm:blocks/old_screen_computer",
+		"2": "blocks/concrete_black",
 		"3": "cfm:blocks/tv_texture",
 		"4": "cfm:blocks/model_block_light",
 		"particle": "cfm:blocks/model_block_dark"
@@ -101,11 +101,11 @@
 			"from": [4.8, 7.4, 3],
 			"to": [4.8, 15, 13],
 			"faces": {
-				"north": {"uv": [14.4, 0, 16, 7.6], "texture": "#2"},
-				"south": {"uv": [14.4, 0, 16, 7.6], "texture": "#2"},
-				"west": {"uv": [0.625, 0, 15.3125, 10.225], "texture": "#2"},
-				"up": {"uv": [14.4, 0, 16, 10], "texture": "#2"},
-				"down": {"uv": [14.4, 0, 16, 10], "texture": "#2"}
+				"north": {"uv": [14.4, 0, 14.4, 7.6], "texture": "#2"},
+				"south": {"uv": [14.4, 0, 14.4, 7.6], "texture": "#2"},
+				"west": {"uv": [0, 0, 1, 0.6], "texture": "#2"},
+				"up": {"uv": [14.4, 0, 14.4, 10], "texture": "#2"},
+				"down": {"uv": [14.4, 0, 14.4, 10], "texture": "#2"}
 			}
 		},
 		{

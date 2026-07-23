@@ -3,7 +3,7 @@
 	"credit": "Made by MisterIceCat - Model generated using BlockBench",
 	"textures": {
 		"0": "cfm:blocks/model_block_dark",
-		"1": "cfm:blocks/screen_computer",
+		"1": "blocks/concrete_black",
 		"2": "cfm:blocks/model_block_light",
 		"3": "blocks/concrete_silver",
 		"4": "blocks/concrete_red",
@@ -576,11 +576,11 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [8.35, 7.9, 11.525]},
 			"faces": {
 				"north": {"uv": [0, 0, 0, 9], "texture": "#1"},
-				"east": {"uv": [5.28125, 4.1875, 6.15625, 5.15625], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#1"},
 				"south": {"uv": [0, 0, 0, 9], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 10.21875], "texture": "#1"},
-				"up": {"uv": [0, 0, 0, 16], "texture": "#1"},
-				"down": {"uv": [0, 0, 0, 16], "texture": "#1"}
+				"west": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"up": {"uv": [0, 0, 0, 14], "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 14], "texture": "#1"}
 			}
 		},
 		{
@@ -2341,16 +2341,19 @@
 		{
 			"name": "group",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
 			"children": [
 				{
 					"name": "group",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						{
 							"name": "group",
 							"origin": [-16, 0, 0],
+							"scope": 0,
 							"color": 0,
 							"children": [0, 1, 2, 3]
 						},
@@ -2380,6 +2383,7 @@
 				{
 					"name": "group",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
 					"children": [
 						25,
@@ -2430,6 +2434,7 @@
 						{
 							"name": "group",
 							"origin": [8, 8, 8],
+							"scope": 0,
 							"color": 0,
 							"children": [
 								70,
@@ -2501,6 +2506,7 @@
 								{
 									"name": "group",
 									"origin": [5, 9, 24],
+									"scope": 0,
 									"color": 0,
 									"children": [136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171]
 								}
