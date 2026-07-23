@@ -5,7 +5,6 @@
 		"1": "cfm:blocks/model_block_light",
 		"2": "cfm:figurines/mrcrayfish_figurine",
 		"3": "cfm:blocks/model_block_dark",
-		"4": "cfm:blocks/figurine_text",
 		"5": "cfm:blocks/light_texture_on",
 		"particle": "cfm:blocks/model_block_light"
 	},
@@ -177,19 +176,6 @@
 				"west": {"uv": [0, 0, 0.2, 3], "texture": "#3"},
 				"up": {"uv": [0, 0, 6, 0.2], "texture": "#3"},
 				"down": {"uv": [0, 0, 6, 0.2], "texture": "#3"}
-			}
-		},
-		{
-			"from": [5, 2, 3.99],
-			"to": [11, 4, 3.99],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 2, 2]},
-			"faces": {
-				"north": {"uv": [0, 0, 6, 2], "texture": "#4"},
-				"east": {"uv": [0, 0, 0, 2], "texture": "#4"},
-				"south": {"uv": [0, 0, 6, 2], "texture": "#4"},
-				"west": {"uv": [0, 0, 0, 2], "texture": "#4"},
-				"up": {"uv": [0, 0, 6, 0], "texture": "#4"},
-				"down": {"uv": [0, 0, 6, 0], "texture": "#4"}
 			}
 		},
 		{
